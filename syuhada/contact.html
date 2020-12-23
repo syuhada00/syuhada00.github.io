@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<title>Shaklee</title>
+<head>
+<style>
+
+/* Style the header */
+.header {
+  background-color:black;
+  font-family:Arial, Helvetica, sans-serif ;
+  padding: 50px;
+    background-image: url('picture/contact.jpg');
+  text-align: center;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+  border-right:none;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color:#787878;
+}
+
+body { 
+  background: grey url("picture/pp1a.jpg") no-repeat fixed center; 
+
+</style>
+</head>
+<body>
+
+	<div class=header>
+	   <a href="index.html"><img src= "picture/shaklee.png" ></a><font face="lucida handwriting" size=+2 color=black>
+	
+	  <h1> LIVE HEALTIER WITH SHAKLEE</h1></font></div>
+ 
+	<ul>
+	   <font <font face="Lucida Handwriting" >
+       <li><a href="index.html">Home</a></li>
+       <li><a href="product.html">Products</a></li>
+	   <li><a href="survey.html">Survey</a></li>
+       <li style="float:right"><a class="active" href="contact.html">Contact Us</a></li>
+       <li style="float:right"><a href="about.html">About</a></li>
+	   </font>
+    </ul>
+	
+	<p style="float:right" id="demo"></p>
+	<br><br> <br><br>
+    <script>
+        var today = new Date();
+        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        var dateTime = date+'   '+time;
+		
+		document.getElementById("demo").innerHTML = dateTime;
+    </script>
+	
+	 <marquee behavior="scroll" direction="left">
+      <h1> LIVE HEALTHY WITH YOUR BELOVED FAMILY</h1>
+	 </marquee><br><br>
+			
+	<center>
+	
+	    <fieldset style="text-align: center; width: 30%; background-color:#aaa;">
+            <h2>Comment Form</h2>
+	         
+	        <form><font size=+1>
+            <h4>NAME  : </h4>
+            <input type="text" name="UserName" id="name" size=43><br><br>
+	        <h4>E-MAIL: </h4>
+            <input type="text" name="email" id="email" size=43><br><br>
+	        <h4>COMMENT: </h4>
+	        <textarea name="describe" rows="7" cols="40"> </textarea><br><br>
+	        
+	        <a href="index.html"><center><input type="button" onclick="display_alert()" value="Submit">
+            </font></font></a>
+            </form>  
+        </fieldset>
+		
+		<br><br><br>
+		
+		<fieldset style="text-align: center; width: 40%; background-color:#aaa;">
+		<br><h2>Shaklee Contact Information</h2><br>
+		<form><font size=+1>
+		    <img src="picture/home.png"><br><br>
+            <img src="https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_location_on_48px-128.png" width=50 height=50><br> Level 1 & 2, Sunway Geo Tower, Jalan Lagoon Selatan, Bandar Sunway,<br>47500 Subang Jaya, Selangor Darul Ehsan.<br><br>
+		    <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-telephone-512.png" width=50 height=50><br> 603-56223188<br><br>
+			<img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-printer-128.png"width=50 height=50><br> 603-56223199<br><br>
+            <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-email-512.png" width=50 height=50><br>customerinquiry@shaklee.com<br><br>
+			<a href="https://www.shaklee.com.my/:"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-world-128.png" width=50 height=50><br>www.shaklee.com.my</a><br>(Official website)<br><br>
+			</font></form>
+        </fieldset>
+		
+		
+   
+	
+	</center>
+	<br><br><br></br>
+	<script>
+        function display_alert()
+        {
+            var name = document.getElementById("name").value;
+ 
+            alert("YOU COMMENT HAVE BEEN SUBMIT.THANK YOU "+ name +":)");
+        }
+    </script>
+  
+    
+    
+</body>
+</html>
+
